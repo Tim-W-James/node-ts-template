@@ -19,7 +19,7 @@
   "main": "dist/src/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "start": "node dist/index",
     "lint": "eslint src",
     "format": "eslint src --fix",
