@@ -18,7 +18,7 @@
   "type": "commonjs",
   "exports": "./dist/index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
+    "dev": "nodemon --watch './**/*.ts' --watch '.env' src/index.ts",
     "build": "tsc --project tsconfig.build.json",
     "start": "node dist/index",
     "lint": "eslint src",

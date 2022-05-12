@@ -47,7 +47,7 @@ Complete the configuration checklist below and remove from the README once compl
   * ES Modules (import, export):
     * Add to `package.json`: `"type": "module"`
     * Modify the scripts in `package.json`:
-      * `"dev": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts"`
+      * `"dev": "nodemon --watch './**/*.ts' --watch '.env' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts"`
       * `"start": "node --es-module-specifier-resolution=node dist/index.js"`
     * Add to `tsconfig.json`:
       * `"module": "ES6"`
