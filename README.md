@@ -11,6 +11,8 @@
   * `dev` - starts nodemon in the terminal, which will reload on file changes
   * `build` - compile prod source code to `./dist`
   * `start` - after build, run the app
+  * `lint` - evaluate ESLint rules against source code
+  * `format` - format source code with prettier and try to fix any ESLint errors
   * `test:run` - run tests
   * `test:ui` - run tests and display on localhost
   * `test` - run unit tests located in `./tests` that will reload whenever files change
@@ -44,6 +46,9 @@ Complete the configuration checklist below and remove from the README once compl
 * [ ] Set the environment of the project:
   * ES Modules (import, export):
     * Add to `package.json`: `"type": "module"`
+    * Modify the scripts in `package.json`:
+      * `"dev": "nodemon --watch './**/*.ts' --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm' src/index.ts"`
+      * `"start": "node --es-module-specifier-resolution=node dist/index.js"`
     * Add to `tsconfig.json`:
       * `"module": "ES6"`
       * `"moduleResolution" : "node`

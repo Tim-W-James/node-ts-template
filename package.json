@@ -16,7 +16,7 @@
     "url": "https://github.com/Tim-W-James/repo_name/issues"
   },
   "type": "commonjs",
-  "main": "dist/src/index.js",
+  "exports": "./dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",
     "build": "tsc --project tsconfig.build.json",
