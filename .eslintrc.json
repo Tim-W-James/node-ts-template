@@ -27,9 +27,6 @@
   "ignorePatterns": ["/*.*"],
   "rules": {
     "@typescript-eslint/quotes": "off",
-    "@typescript-eslint/comma-dangle": "off",
-    "total-functions/no-unsafe-mutable-readonly-assignment": "warn",
-    "functional/functional-parameters": "warn",
-    "functional/no-expression-statement": "warn"
+    "@typescript-eslint/comma-dangle": "off"
   }
 }
