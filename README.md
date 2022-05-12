@@ -10,7 +10,7 @@
 * npm scripts (run with `npm run <script>`):
   * `dev` - starts nodemon in the terminal, which will reload on file changes
   * `build` - compile prod source code to `./dist`
-  * `preview` - after build, run the app
+  * `start` - after build, run the app
   * `test:run` - run tests
   * `test:ui` - run tests and display on localhost
   * `test` - run unit tests located in `./tests` that will reload whenever files change
