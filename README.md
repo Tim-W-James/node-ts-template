@@ -1,9 +1,10 @@
-## Frontend TS Template
+## Node Functional Programming TS Template
 
 ### Template includes:
 
 * [Vite](https://vitejs.dev/config/): frontend build tool and dev server, configured in `./vite.config.ts`
 * [TypeScript](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html): types for js. Configured in `./tsconfig.json`
+* Various utilities and ESLint rules are installed with a focus on a functional programming style
 * [ESLint](https://eslint.org/docs/2.0.0/user-guide/configuring): Linter/code analyzer with plugins for TypeScript and sonarjs. Configured in `./.eslintrc.json`
 * [Prettier](https://prettier.io/docs/en/configuration.html): Formatter. Configured in `./.prettierrc.json`
 * [Vitest](https://vitest.dev/config/): testing framework, configured in `./vite.config.ts` > test

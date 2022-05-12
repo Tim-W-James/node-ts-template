@@ -2,7 +2,7 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json",
-    "sourceType": "module",
+    "sourceType": "script",
     "ecmaVersion": "latest",
     "ecmaFeatures": {
       "impliedStrict": true,
@@ -17,13 +17,19 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:prettier/recommended",
-    "./.eslintrc-auto-import.json"
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["@typescript-eslint", "sonarjs", "prettier", "vitest"],
+  "plugins": [
+    "@typescript-eslint",
+    "sonarjs",
+    "prettier"
+  ],
   "ignorePatterns": ["/*.*"],
   "rules": {
     "@typescript-eslint/quotes": "off",
-    "@typescript-eslint/comma-dangle": "off"
+    "@typescript-eslint/comma-dangle": "off",
+    "total-functions/no-unsafe-mutable-readonly-assignment": "warn",
+    "functional/functional-parameters": "warn",
+    "functional/no-expression-statement": "warn"
   }
 }

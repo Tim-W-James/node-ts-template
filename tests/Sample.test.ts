@@ -1,5 +1,5 @@
-// @vitest-environment jsdom
-import hello from "../src/test-example";
+// @vitest-environment node
+import { test, expect, assert } from "vitest";
 
 test("Math.sqrt()", () => {
   expect(Math.sqrt(4)).toBe(2);
@@ -17,8 +17,4 @@ test("JSON", () => {
 
   expect(output).eq('{"foo":"hello","bar":"world"}');
   assert.deepEqual(JSON.parse(output), input, "matches original");
-});
-
-test("Sample Function", () => {
-  expect(hello()).toBe("Hello");
 });
