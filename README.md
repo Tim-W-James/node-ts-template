@@ -7,11 +7,10 @@
 * [ESLint](https://eslint.org/docs/2.0.0/user-guide/configuring): Linter/code analyzer with plugins for TypeScript and sonarjs. Configured in `./.eslintrc.json`
 * [Prettier](https://prettier.io/docs/en/configuration.html): Formatter. Configured in `./.prettierrc.json`
 * [Vitest](https://vitest.dev/config/): testing framework, configured in `./vite.config.ts` > test
-* [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import#configuration): global imports, configured in `./vite.config.ts` > Plugins > AutoImport
 * npm scripts (run with `npm run <script>`):
-  * `dev` - starts a dev environment on localhost that will reload as files change
+  * `dev` - starts nodemon in the terminal, which will reload on file changes
   * `build` - compile prod source code to `./dist`
-  * `preview` - after build, preview on localhost
+  * `preview` - after build, run the app
   * `test:run` - run tests
   * `test:ui` - run tests and display on localhost
   * `test` - run unit tests located in `./tests` that will reload whenever files change
@@ -62,7 +61,6 @@ Complete the configuration checklist below and remove from the README once compl
     * `"target": "<target>"`
     * `"module": "<target>"`
     * `"lib": ["<target>", "DOM"]`
-* [ ] Add any [global imports](https://github.com/antfu/unplugin-auto-import#configuration) to `vite.config.ts` > Plugins > AutoImport
 * [ ] Do you want to commit package-lock? If yes, remove it from the `./.gitignore`
 * [ ] Specify node version in the `.nvmrc`
 * [ ] Specify formatting and editor configuration in `./.editorconfig`. Use the `./.prettierrc.json` for js specific rules that are not defined in `./.editorconfig`.
