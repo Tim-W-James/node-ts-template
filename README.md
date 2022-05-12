@@ -42,8 +42,6 @@ Complete the configuration checklist below and remove from the README once compl
   repo_name, project_title, project_description, project_keywords
 * [ ] Replace personal information with your own:
   Tim-W-James, Tim James
-<!-- ! Use ESM, the following step is only included for completions sake
-     ! If you need to use CJS, see: https://www.typescriptlang.org/docs/handbook/esm-node.html
 * [ ] Set the environment of the project:
   * ES Modules (import, export):
     * Add to `package.json`: `"type": "module"`
@@ -55,7 +53,7 @@ Complete the configuration checklist below and remove from the README once compl
   * Node CommonJS (require, exports):
     * Add to `package.json`: `"type": "commonjs"`
     * Add to `tsconfig.json`: `"module": "commonjs"`
-    * Add to `.eslintrc.json`: `"parserOptions": { "sourceType": "script" }` -->
+    * Add to `.eslintrc.json`: `"parserOptions": { "sourceType": "script" }`
 * [ ] Set the target ES version (ES6 - supported by most browsers, ESNext - latest):
   * `./.eslint.json`:
     * `"<target>": true`
